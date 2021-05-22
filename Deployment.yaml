@@ -6,7 +6,7 @@ metadata:
     app: demo
   namespace: xiangdong
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: demo
@@ -18,5 +18,3 @@ spec:
       containers:
       - name: demo
         image: harbor.mydong.vip/xiangdong/python:<IMAGE_TAG>
-        ports:
-        - containerPort: 80
